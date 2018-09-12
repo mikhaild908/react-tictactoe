@@ -1,28 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+body {
+  background-color: black;
   color: white;
+  font-family:Courier New, Courier, monospace;
 }
 
-.App-title {
-  font-size: 1.5em;
+div {
+  display: block;
 }
 
-.App-intro {
-  font-size: large;
+.canvas {
+  width: 400px;
+  height: 400px;
+}
+.board {
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.square {
+  float: left;
+  width: 30.00%;
+  height: 30.00%;
+  cursor: pointer;
+  border-color: white;
+  border-width: 2px;
+  font-size: 84px;
+  text-align: center;
+  /*vertical-align: middle;*/
+  line-height: 150.00%;
+}
+
+.top {
+  border-bottom-style: solid;
+}
+
+.left {
+  border-right-style: solid;
+}
+
+.right {
+  border-left-style: solid;
+}
+
+.bottom {
+  border-top-style: solid;
+  /*clear: both;*/
+}
+
+#newGameButton {
+  border-style: outset;
+  color: white;
+  background-color:black;
+  width: 30%;
+  height: 32px;
+  font-size: 14px;
+  text-align: center;
+  float: left;
+  clear: none;
+}
+
+#messages {
+  float: left;
+  font-size: 20px;
+  width: 30%;
+  text-align: center;
+
+  /*border: 1px solid red;*/
 }
